@@ -1,5 +1,29 @@
 {
   "sections": {
+    "slider_em7pqx": {
+      "type": "slider",
+      "blocks": {
+        "product_kqhB7J": {
+          "type": "product",
+          "settings": {
+            "products": "testタイトル"
+          }
+        },
+        "product_GJGmmc": {
+          "type": "product",
+          "settings": {
+            "products": "testタイトル２"
+          }
+        }
+      },
+      "block_order": [
+        "product_kqhB7J",
+        "product_GJGmmc"
+      ],
+      "settings": {
+        "title": "Slider"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -21,7 +45,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -34,6 +58,7 @@
         "text",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -41,6 +66,7 @@
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -52,22 +78,32 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Brewing Peace, Blooming Smiles.",
+            "heading_size": "h1"
+          }
+        },
+        "heading_WG38br": {
+          "type": "heading",
+          "settings": {
+            "heading": "ビールは平和だからこそ、おいしい",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、<br\/>広島の象徴でもある平和公園の東側、<br\/>本通りに入ってすぐにあるブルワリー。<br\/>この地にあるからこそ「まちに根付いたものを作りたい」と、<br\/>広島県産の素材も使い、何度でも飲みたくなるビールを目指しています。<br\/>また、醸造設備を眺めながら楽しめる、<br\/>併設のブリューパブ＆居酒屋「Craftbeer と炭火はればれ」もあり、<br\/>『まさにビール工場の中で飲める！楽しめる！』場所です。<\/p>"
           }
         }
       },
       "block_order": [
         "heading",
+        "heading_WG38br",
         "text"
       ],
       "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
         "color_scheme": "scheme-1",
         "full_width": true,
         "padding_top": 40,
@@ -79,17 +115,25 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "full_width": false,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -127,6 +171,7 @@
         "heading_size": "h2",
         "desktop_layout": "left",
         "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "scheme-1",
         "padding_top": 36,
         "padding_bottom": 36
@@ -134,10 +179,12 @@
     },
     "video": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "scheme-1",
@@ -181,6 +228,7 @@
         "column2",
         "column3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -191,15 +239,16 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "slider_em7pqx",
     "image_banner",
     "rich_text",
     "featured_collection",

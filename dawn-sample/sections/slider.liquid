@@ -1,0 +1,54 @@
+<section id="sliderWrapper">
+  <div class="sliderHolder">
+    {% for block in section.blocks %}
+      {%- liquid
+        assign http = "http://"
+        assign domain = shop.domain
+        assign url = "/cdn/shop/"
+        assign img = block.settings.products.featured_media
+      -%}
+    <a class="sliderBlock" href="{{ block.settings.products.url }}">
+      <div class="imgArea" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img }}')"></div>
+      <div class="Name">{{ block.settings.products.title }}</div>
+      {{ block.settings.products.description }}
+      <div class="textArea">
+        <div class="price">{{ block.settings.products.price | money_without_currency}}</div>
+        <div class="btn">詳細はコチラ</div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Slider",
+      "label": "Sliderのタイトル"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider" 
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "商品項目",
+      "settings": [
+        {
+          "type": "product",
+          "id": "products",
+          "label": "商品選択"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

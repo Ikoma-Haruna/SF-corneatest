@@ -85,6 +85,10 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {%- when 'release_date' -%}
+                {%- if product.metafields.my_fields.release_date.value != blank -%}
+                  <p>{{ block.settings.text }}</p>
+                {%- endif -%}
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -943,6 +947,18 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+    {
+      "type": "release_date",
+      "name": "発売日",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "発売日：",
+          "label": "発売日"
+        }
+      ]
     },
     {
       "type": "share",

@@ -1,0 +1,143 @@
+html {
+  font-size: 69.4%;
+  font-size: 0.694vw;
+}
+
+body header#Header {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+}
+header#Header #Logo {
+  width: 24rem;
+  aspect-ratio: 583 / 79;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header#Header #Logo img {
+  width: 100%;
+}
+header#Header #headerNav {
+  margin: 0 0 0 auto;
+}
+
+
+
+section#sliderWrapper .sliderHolder {
+  display: flex;
+  gap: 5rem;
+}
+section#sliderWrapper .sliderHolder .sliderBlock {
+  width: calc((100% - 5rem * 2) / 3);
+  text-decoration: none;
+  color: black;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .imgArea {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .imgArea {
+  background-size: cover;
+  background-position: center center;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .Name {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  padding: 0 0 1rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid black;
+}
+section#sliderWrapper .sliderHolder .sliderBlock p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 1rem 0 2rem;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .textArea {
+  display: flex;
+  justify-content: space-between;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .textArea .price {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .textArea .price::before {
+  content: "¥";
+}
+section#sliderWrapper .sliderHolder .sliderBlock .textArea .price::after {
+  content: '（税込）';
+  font-size: 1rem;
+}
+section#sliderWrapper .sliderHolder .sliderBlock .textArea .btn {
+  font-size: 1.2rem;
+  color: black;
+  border: 1px solid black;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+section#sliderWrapper .sliderHolder .sliderBlock:hover .textArea .btn {
+  color: white;
+  background-color: black;
+}
+section#sliderWrapper .sliderHolder .sliderBlock:hover 
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 835px) {
+  html {
+    font-size: 119.7%;
+    font-size: 1.197vw;
+  }
+
+  header#Header {
+    justify-content: space-between;
+    position: relative;
+  }
+  header#Header #Logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 266.6%;
+    font-size: 2.666vw;
+  }
+
+  header#Header #Logo {
+    width: calc(24rem / 1.75);
+  }
+  header#Header #headerIcon .header__icon {
+    width: calc(4.4rem / 1.25);
+  }
+}

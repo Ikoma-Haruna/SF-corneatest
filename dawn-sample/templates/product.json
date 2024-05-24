@@ -11,7 +11,9 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "caption": {
           "type": "text",
@@ -21,16 +23,21 @@
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {
+          }
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -40,7 +47,9 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {
+          }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -78,6 +87,12 @@
             "page": ""
           }
         },
+        "release_date_hgLQtU": {
+          "type": "release_date",
+          "settings": {
+            "text": "発売日：{{ product.metafields.my_fields.release_date | metafield_text }}"
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -98,13 +113,18 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
+        "release_date_hgLQtU",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -141,7 +161,9 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
+        "section_color_scheme": "",
         "color_scheme": "scheme-2",
+        "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
@@ -183,9 +205,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -195,9 +217,11 @@
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
+        "products_to_show": 4,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
@@ -205,12 +229,47 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "faq_FKNPya": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_bDCGmN": {
+          "type": "faq_item",
+          "settings": {
+            "title": "質問１",
+            "answer": "回答１"
+          }
+        },
+        "faq_item_nDiTkE": {
+          "type": "faq_item",
+          "settings": {
+            "title": "質問２",
+            "answer": "回答２"
+          }
+        },
+        "faq_item_Lyn7Md": {
+          "type": "faq_item",
+          "settings": {
+            "title": "質問３",
+            "answer": "改行あり<br>\n回答３"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_bDCGmN",
+        "faq_item_nDiTkE",
+        "faq_item_Lyn7Md"
+      ],
+      "settings": {
+        "title": "FAQ"
+      }
     }
   },
   "order": [
     "main",
     "image-with-text",
     "multicolumn",
-    "related-products"
+    "related-products",
+    "faq_FKNPya"
   ]
 }
