@@ -1,3 +1,5 @@
+{{ 'section-slider.css' | asset_url | stylesheet_tag }}
+
 <section id="sliderWrapper">
   <div class="sliderHolder">
     {% for block in section.blocks %}
@@ -8,12 +10,12 @@
         assign img = block.settings.products.featured_media
       -%}
     <a class="sliderBlock" href="{{ block.settings.products.url }}">
-      <div class="imgArea" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img }}')"></div>
       <div class="Name">{{ block.settings.products.title }}</div>
-      {{ block.settings.products.description }}
+      <div class="imgArea" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img }}')"></div>
+      {% comment %} {{ block.settings.products.description }} {% endcomment %}
       <div class="textArea">
         <div class="price">{{ block.settings.products.price | money_without_currency}}</div>
-        <div class="btn">詳細はコチラ</div>
+        <div class="more">View More </div>
       </div>
     </a>
     {% endfor %}

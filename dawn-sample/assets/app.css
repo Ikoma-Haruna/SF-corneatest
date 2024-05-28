@@ -2,96 +2,426 @@ html {
   font-size: 69.4%;
   font-size: 0.694vw;
 }
+body {
+  height: 100%;
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  color: rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
+}
 
-body header#Header {
+
+h1,h2 {
+  font-family: roboto, sans-serif !important;
+  font-style: normal !important;
+  -webkit-font-feature-settings: "palt" !important;
+  font-feature-settings: "palt" !important;
+  font-display: swap !important;
+  font-weight: 700 !important;
+  font-size: 3.55rem !important;
+  text-align: center !important;
+  margin: 0 auto 3.8rem !important;
+  text-transform: uppercase !important;
+}
+
+header#Header {
   width: 100%;
   max-width: 100%;
   margin: 0;
   padding: 1rem 2rem;
   display: flex;
+  justify-content: space-between;
+}
+header#Header h1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24rem;
 }
 header#Header #Logo {
   width: 24rem;
-  aspect-ratio: 583 / 79;
+  aspect-ratio: 583 / 94;
   display: flex;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 header#Header #Logo img {
   width: 100%;
 }
 header#Header #headerNav {
-  margin: 0 0 0 auto;
+  margin: 0;
 }
 
 
 
-section#sliderWrapper .sliderHolder {
+
+
+
+footer#Footer .Section {
+  background-color: #EFEFEF;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 700;
+}
+footer#Footer .Section .Contents {
+  width: 85.86%;
+  margin: 0 auto;
+  padding: 7rem 0 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  gap: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
 }
-section#sliderWrapper .sliderHolder .sliderBlock {
-  width: calc((100% - 5rem * 2) / 3);
-  text-decoration: none;
-  color: black;
+footer#Footer .Section .Contents .ConpanyMenu {
+  width: 40.19%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .imgArea {
+footer#Footer .Section .Contents .ConpanyMenu .Logo {
+  background-image: url("https://hnb.beer/assets/img/common/Logo.png");
+  width: 20rem;
+  aspect-ratio: 379/467;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder {
+  width: calc(100% - 16.3rem - 14.5%);
+  margin: 0 0 0.5rem;
+  position: absolute;
+  top: 8.25rem;
+  right: -1rem;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li {
+  background-size: 100% 100%;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li a {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
+  height: 100%;
+  color: rgb(35, 24, 21);
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.ig {
+  background-image: url("https://hnb.beer/assets/img/common/snsIG.png");
+  height: 2.6rem;
+  aspect-ratio: 1/1;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.x {
+  background-image: url("https://hnb.beer/assets/img/common/snsX.png");
+  height: 2.6rem;
+  aspect-ratio: 1/1;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.fb {
+  background-image: url("https://hnb.beer/assets/img/common/snsFB.png");
+  height: 2.6rem;
+  aspect-ratio: 21/40;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.note {
+  background-image: url("https://hnb.beer/assets/img/common/snsNoteWide.png");
+  height: 4rem;
+  aspect-ratio: 218/83;
+}
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online {
+  width: 100%;
+  aspect-ratio: 489/126;
+  border: 1px solid rgb(35, 24, 21);
+  font-size: 2.15rem;
+  margin: 2.5rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .imgArea {
-  background-size: cover;
-  background-position: center center;
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0.25rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .Name {
+footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online:hover a {
+  letter-spacing: 0.05em;
+}
+footer#Footer .Section .Contents .ConpanyMenu .BtoB {
+  width: calc(100% - 17.3rem - 14.5%);
+  aspect-ratio: 489/194;
+  border: 1px solid rgb(35, 24, 21);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 0.55rem;
+  color: rgb(35, 24, 21);
+}
+footer#Footer .Section .Contents .ConpanyMenu .BtoB span {
+  display: inline-block;
+  width: 100%;
+}
+footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(1) {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 200;
+  font-size: 5rem;
+  letter-spacing: -0.075em;
+}
+footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(2) {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin: -2rem 0 0;
+}
+footer#Footer .Section .Contents .ConpanyMenu .cw {
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 3.75rem 0 0;
+}
+footer#Footer .Section .Contents .MainMenu {
+  width: 50%;
+  margin: -0.75rem 0 0;
+}
+footer#Footer .Section .Contents .MainMenu h2 {
+  font-size: 4rem;
+}
+footer#Footer .Section .Contents .MainMenu ul {
+  font-size: 2rem;
+  line-height: 2.45rem;
+  margin: 4rem 0 0;
+  text-transform: uppercase;
+}
+footer#Footer .Section .Contents .MainMenu ul li {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer#Footer .Section .Contents .MainMenu ul li.clickNone {
+  opacity: 0.2;
+}
+footer#Footer .Section .Contents .MainMenu ul li a {
+  color: rgb(35, 24, 21);
+  width: 100%;
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB {
+  margin: 0 0 0 7.86%;
+  height: 17.8rem;
+  width: auto;
+  aspect-ratio: 243/329;
+  background-color: rgb(35, 24, 21);
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB a {
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB a span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(1) {
+  font-size: 3.15rem;
+  font-weight: 400;
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(2) {
+  font-size: 0.85rem;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 300;
+  letter-spacing: 0.225em;
+}
+footer#Footer .Section .Contents .MainMenu ul li.BtoB a span.arrow {
+  display: none;
+}
+footer#Footer .Section .Contents .MainMenu ul li:hover {
+  padding: 0 0 0 1rem;
+}
+@media (hover: hover) {
+  footer#Footer .Section .Contents .MainMenu ul li:hover {
+    cursor: pointer;
+  }
+}
+footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB {
+  padding: 0;
+}
+footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB a span:nth-child(1) {
+  letter-spacing: 0.05em;
+}
+footer#Footer .Section .Contents .online {
+  position: absolute;
+  bottom: 8rem;
+  right: 0;
+  width: 13.5rem;
+  background-color: rgb(35, 24, 21);
+  aspect-ratio: 275/412;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+footer#Footer .Section .Contents .online .icon {
+  background-image: url("https://hnb.beer/assets/img/common/iconEC.png");
+  width: 4.3rem;
+  aspect-ratio: 57/50;
+  margin: 0 1rem 1rem 0;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+footer#Footer .Section .Contents .online span {
+  text-decoration: underline;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 2.5rem;
-  line-height: 3.75rem;
-  padding: 0 0 1rem;
-  margin: 1rem 0;
-  border-bottom: 1px solid black;
+  line-height: 3rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-section#sliderWrapper .sliderHolder .sliderBlock p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  margin: 1rem 0 2rem;
+footer#Footer .Section .Contents .online:hover span {
+  letter-spacing: 0.1em;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .textArea {
+footer#Footer .Section .Contents .BtoB {
+  display: none;
+}
+footer#Footer .Section .Foot {
+  width: 100%;
+  background-color: rgb(35, 24, 21);
+  aspect-ratio: 2780/171;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .textArea .price {
-  font-size: 2.5rem;
-  line-height: 3.75rem;
+footer#Footer .Section .Foot p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 400;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .textArea .price::before {
-  content: "¥";
+footer#Footer .Section .Foot p span {
+  font-weight: 700;
 }
-section#sliderWrapper .sliderHolder .sliderBlock .textArea .price::after {
-  content: '（税込）';
-  font-size: 1rem;
-}
-section#sliderWrapper .sliderHolder .sliderBlock .textArea .btn {
-  font-size: 1.2rem;
-  color: black;
-  border: 1px solid black;
-  width: 15rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .5s;
-}
-section#sliderWrapper .sliderHolder .sliderBlock:hover .textArea .btn {
-  color: white;
-  background-color: black;
-}
-section#sliderWrapper .sliderHolder .sliderBlock:hover 
 
 
 
@@ -122,7 +452,369 @@ section#sliderWrapper .sliderHolder .sliderBlock:hover
   }
 
 
+  footer#Footer .Section {
+    background-color: #EFEFEF;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    -webkit-font-feature-settings: "palt";
+            font-feature-settings: "palt";
+    font-display: swap;
+    font-weight: 700;
+    width: 100%;
+    padding: 0;
+  }
+  footer#Footer .Section .Contents {
+    width: 85.86%;
+    height: auto;
+    margin: 0 auto;
+    padding: 7rem 0 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    display: unset;
+    text-align: center;
+    margin: 0;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .Logo {
+    display: inline-block;
+    background-image: url("https://hnb.beer/assets/img/common/Logo.png");
+    width: 16.3rem;
+    aspect-ratio: 379/467;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder {
+    width: 26rem;
+    margin: 3.25rem auto 0;
+    position: unset;
+    top: auto;
+    right: auto;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li {
+    background-size: 100% 100%;
+    -webkit-filter: unset;
+            filter: unset;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li a {
+    width: 100%;
+    height: 100%;
+    color: rgb(35, 24, 21);
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.ig {
+    background-image: url("https://hnb.beer/assets/img/common/snsIG.png");
+    height: 2.6rem;
+    aspect-ratio: 1/1;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.x {
+    background-image: url("https://hnb.beer/assets/img/common/snsX.png");
+    height: 2.6rem;
+    aspect-ratio: 1/1;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.fb {
+    background-image: url("https://hnb.beer/assets/img/common/snsFB.png");
+    height: 2.6rem;
+    aspect-ratio: 21/40;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.note {
+    background-image: url("https://hnb.beer/assets/img/common/snsNoteWide.png");
+    height: 4rem;
+    aspect-ratio: 218/83;
+    margin: 0 -1rem 0 -1rem;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online {
+    width: 100%;
+    aspect-ratio: 489/126;
+    border: 1px solid rgb(35, 24, 21);
+    font-size: 2.15rem;
+    margin: 1.6rem 0 0;
+    letter-spacing: 0.08em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 0 0.25rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online:hover a {
+    letter-spacing: 0.05em;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .BtoB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26rem;
+    margin: 2rem auto 0;
+    aspect-ratio: 489/194;
+    border: 1px solid rgb(35, 24, 21);
+    text-align: center;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .BtoB span {
+    color: rgb(35, 24, 21);
+    display: inline-block;
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(1) {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: -1rem 0 0;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(2) {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    margin: 1rem 0 0;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .cw {
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 3.75rem 0 0;
+  }
+  footer#Footer .Section .Contents .MainMenu {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+    margin: 3.25rem 0 0;
+  }
+  footer#Footer .Section .Contents .MainMenu h2 {
+    font-size: 4rem;
+    display: none;
+  }
+  footer#Footer .Section .Contents .MainMenu ul {
+    line-height: 3.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    margin: 4rem 0 0;
+    height: 10rem;
+    font-size: 2.4rem;
+    position: relative;
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin: 0 !important;
+    width: 33.333%;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    text-align: center;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.clickNone {
+    opacity: 0.2;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li a {
+    color: rgb(35, 24, 21);
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:nth-child(1), footer#Footer .Section .Contents .MainMenu ul li:nth-child(2), footer#Footer .Section .Contents .MainMenu ul li:nth-child(3), footer#Footer .Section .Contents .MainMenu ul li:nth-child(4) {
+    margin: 0 4.51% 1.5rem 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:nth-child(5), footer#Footer .Section .Contents .MainMenu ul li:nth-child(6), footer#Footer .Section .Contents .MainMenu ul li:nth-child(7), footer#Footer .Section .Contents .MainMenu ul li:nth-child(8) {
+    margin: 0 0 1.5rem 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB {
+    aspect-ratio: 243/329;
+    background-color: rgb(35, 24, 21);
+    width: 55.56%;
+    height: 9.75rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB a {
+    color: rgb(255, 255, 255);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(1) {
+    font-size: 3.15rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(2) {
+    font-size: 1.6rem;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-style: normal;
+    -webkit-font-feature-settings: "palt";
+            font-feature-settings: "palt";
+    font-display: swap;
+    font-weight: 300;
+    letter-spacing: 0.225em;
+    margin: 1.2rem 0 0;
+    line-height: 2rem;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span.arrow {
+    display: none;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:hover {
+    padding: 0 0 0 1rem;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:hover {
+    cursor: pointer;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB {
+    padding: 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB a span:nth-child(1) {
+    letter-spacing: 0.05em;
+  }
+  footer#Footer .Section .Contents .cw {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 3.75rem 0 0;
+    text-align: center;
+  }
+  footer#Footer .Section .Contents .online {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 26rem;
+    aspect-ratio: 412/185;
+    margin: 2rem auto 0;
+    position: unset;
+    background-color: rgb(35, 24, 21);
+    color: rgb(255, 255, 255);
+  }
+  footer#Footer .Section .Contents .online .icon {
+    -webkit-filter: brightness(0) invert(1);
+            filter: brightness(0) invert(1);
+  }
+  footer#Footer .Section .Contents .online span {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  footer#Footer .Section .Contents .BtoB {
+    display: none;
+  }
+  footer#Footer .Section .Foot {
+    width: 100%;
+    background-color: rgb(35, 24, 21);
+    aspect-ratio: 1000/103;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer#Footer .Section .Foot p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: noto-sans-cjk-jp, sans-serif;
+    font-style: normal;
+    -webkit-font-feature-settings: "palt";
+            font-feature-settings: "palt";
+    font-display: swap;
+    font-weight: 400;
+    font-size: 1.15rem;
+    letter-spacing: 0.12em;
+  }
+  footer#Footer .Section .Foot p span {
+    font-weight: 700;
+  }
+
+
+  
+
 }
+
+
+
+
+
 
 
 
@@ -134,10 +826,33 @@ section#sliderWrapper .sliderHolder .sliderBlock:hover
     font-size: 2.666vw;
   }
 
+  header#Header h1 {
+    width: calc(24rem / 1.25);
+  }
   header#Header #Logo {
-    width: calc(24rem / 1.75);
+    width: calc(24rem / 1.25);
   }
   header#Header #headerIcon .header__icon {
     width: calc(4.4rem / 1.25);
   }
+
+
+
+  footer#Footer .Section .Contents {
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .MainMenu {
+    margin: 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul {
+    height: auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer#Footer .Section .Contents .MainMenu ul li {
+    width: 100%;
+  }
+
 }
