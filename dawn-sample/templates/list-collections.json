@@ -5,11 +5,20 @@
       "settings": {
         "title": "Collections",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "section_concept_PA4tQ7": {
+      "type": "section-concept",
+      "settings": {
+        "title": "CONCEPT"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_concept_PA4tQ7"
   ]
 }

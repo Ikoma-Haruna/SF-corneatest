@@ -1,0 +1,650 @@
+section#ShopAccess ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+section#ShopAccess a {
+  text-decoration: unset;
+}
+/* section#ShopAccess .Section {
+  padding: 19.5rem 0;
+} */
+section#ShopAccess .Section .Contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8rem;
+}
+section#ShopAccess .Section .Contents .Holder {
+  width: 45.19%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section#ShopAccess .Section .Contents .Holder .textArea {
+  width: 100%;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 700;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .cat {
+  width: 100%;
+  aspect-ratio: 940/62;
+  background-color: rgb(35, 24, 21);
+  color: rgb(255, 255, 255);
+  padding: 0 2rem;
+  font-size: 1.55rem;
+  letter-spacing: 0.08em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2.5rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .Logo {
+  border: 1px solid rgb(35, 24, 21);
+  width: 32.23%;
+  aspect-ratio: 1/1;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock {
+  width: 60%;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name {
+  margin: 0 0 1rem;
+  padding: 0 0 1rem;
+  border-bottom: 1px solid rgb(35, 24, 21);
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span {
+  display: inline-block;
+  width: 100%;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span:nth-child(2) {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 700;
+  font-size: 2.65rem;
+  margin: -.5rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .address {
+  font-size: 1.15rem;
+  margin: 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .tel {
+  font-size: 1.15rem;
+  color: rgb(35, 24, 21);
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .tel::before {
+  content: "Tel.";
+  margin: 0 0.5rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open {
+  font-size: 1.15rem;
+  position: relative;
+  padding: 0 0 0 3.5rem;
+  margin: -.75rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open::before {
+  content: "Open.";
+  margin: 0 0.5rem 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open li.wd::before {
+  content: "weekday";
+  font-weight: 300;
+  width: 5rem;
+  display: inline-block;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open li.hd::before {
+  content: "holiday";
+  font-weight: 300;
+  width: 5rem;
+  display: inline-block;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+  height: 1.9rem;
+  margin: 2rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li {
+  height: 100%;
+  background-size: cover;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li.ig {
+  background-image: url("https://hnb.beer/assets/img/common/snsIG.png");
+  aspect-ratio: 1/1;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li.x {
+  background-image: url("https://hnb.beer/assets/img/common/snsX.png");
+  aspect-ratio: 1/1;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li.fb {
+  background-image: url("https://hnb.beer/assets/img/common/snsFB.png");
+  aspect-ratio: 21/40;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder li.note {
+  background-image: url("https://hnb.beer/assets/img/common/snsNote.png");
+  aspect-ratio: 1/1;
+}
+section#ShopAccess .Section .Contents .Holder .textArea p {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.08em;
+  margin: 2rem 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul {
+  width: calc(100% - 14.75rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li span {
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li span:nth-child(1) {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  background-color: rgb(35, 24, 21);
+  aspect-ratio: 107/42;
+  height: 2.1rem;
+  text-align: center;
+  padding: 0.075rem 0 0;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li span:nth-child(2) {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-size: 2rem;
+  color: rgb(35, 24, 21);
+  margin: 0 0 0 1rem;
+  letter-spacing: 0.08em;
+  padding: 0 0 0.15rem;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li.note {
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  /* margin: 1rem 0 0; */
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve a {
+  width: 14.75rem;
+  aspect-ratio: 295/72;
+  border: 1px solid rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: rgb(35, 24, 21);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0.25rem;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(35, 24, 21);
+  background-color: rgb(255, 255, 255);
+  z-index: -1;
+  top: 0.25rem;
+  left: 0.25rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+section#ShopAccess .Section .Contents .Holder .textArea .reserve a:hover::after {
+  top: 0;
+  left: 0;
+}
+section#ShopAccess .Section .Contents .Holder .imgArea {
+  width: 100%;
+  aspect-ratio: 940/593;
+  display: block;
+  background-size: cover;
+}
+section#ShopAccess .Section .Contents .Holder .gmArea {
+  width: 100%;
+  margin: 5.5rem auto 0;
+}
+section#ShopAccess .Section .Contents .Holder .gmArea .gm {
+  width: 100%;
+  aspect-ratio: 2080/681;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  overflow: hidden;
+}
+section#ShopAccess .Section .Contents .Holder .gmArea .gm iframe {
+  width: calc(100% + 1rem);
+  height: calc(100% + 30rem);
+  margin: -15rem -0.5rem 0 -0.5rem;
+}
+section#ShopAccess .Section .Contents .Holder .gmArea p {
+  width: 100%;
+  text-align: center;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 2rem auto 0;
+}
+section#ShopAccess .Section .Contents .Holder.Harebare {
+  width: 100%;
+}
+section#ShopAccess .Section .Contents .Holder.Harebare .textArea {
+  width: 45.19%;
+}
+section#ShopAccess .Section .Contents .Holder.Harebare .textArea .details .Logo {
+  aspect-ratio: 1/1.1;
+}
+section#ShopAccess .Section .Contents .Holder.Harebare .imgArea {
+  width: 50%;
+}
+section#ShopAccess .Section .Contents .shopList {
+  margin: 2.85rem auto 0;
+  width: 100%;
+  aspect-ratio: 2085/191;
+  border: 1px solid rgb(35, 24, 21);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: rgb(35, 24, 21);
+}
+section#ShopAccess .Section .Contents .shopList span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+}
+section#ShopAccess .Section .Contents .shopList span:nth-child(1) {
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+section#ShopAccess .Section .Contents .shopList span:nth-child(2) {
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  font-display: swap;
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+  margin: .5rem 0 0;
+}
+section#ShopAccess .Section .Contents .shopList:hover span:nth-child(1) {
+  letter-spacing: 0.1em;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 835px) {
+  /* section#ShopAccess .Section {
+    padding: 22.5rem 0;
+  } */
+  section#ShopAccess .Section .Contents {
+    gap: 5rem 5.62%;
+    margin: -3rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 47.19%;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea {
+    width: 100% !important;
+    margin: 3rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .online {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 3rem auto 6rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .cat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    aspect-ratio: 880/62;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details {
+    position: relative;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .Logo {
+    width: 28%;
+    position: absolute;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock {
+    width: 100%;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name {
+    padding: 0 0 2rem 33.18%;
+    margin: 0 0 2rem;
+    min-height: 13rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span:nth-child(2) {
+    font-size: 3.3125rem;
+    line-height: 3.3125rem;
+    margin: 0.75rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .address {
+    font-size: 1.4375rem;
+    margin: 0 0 0.5rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .tel {
+    font-size: 1.6rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open {
+    font-size: 1.6rem;
+    margin: -0.5rem 0 0;
+    padding: 0 0 0 4.5rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open li::before {
+    width: 6.5rem !important;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .gm {
+    font-size: 1.5625rem;
+    margin: 4.25rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .imgArea {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 880/545 !important;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .textArea {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .textArea .details .Logo {
+    width: 32.23%;
+    position: unset;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .textArea .details .inBlock {
+    width: 60%;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .textArea .details .inBlock .name {
+    padding: 0 0 2rem;
+    min-height: auto;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .imgArea {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 5rem auto 0;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .gmArea {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  section#ShopAccess .Section .Contents .shopList {
+    aspect-ratio: 880/141;
+  }
+  body footer#Footer .Section {
+    background-color: #EFEFEF;
+    font-family: roboto, sans-serif;
+    font-style: normal;
+    -webkit-font-feature-settings: "palt";
+            font-feature-settings: "palt";
+    font-display: swap;
+    font-weight: 700;
+    width: 100%;
+    padding: 0;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  /* section#ShopAccess .Section {
+    padding: 22.5rem 0 10rem;
+  } */
+  section#ShopAccess .Section .Contents {
+    gap: 3rem 5.62%;
+  }
+  section#ShopAccess .Section .Contents .Holder {
+    width: 100%;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .online .arrow {
+    font-size: 1.85rem;
+    padding: 0 0 0 3.65rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .Logo {
+    position: unset;
+    width: 33%;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock {
+    width: 60%;
+    margin: -.75rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name {
+    min-height: auto;
+    padding: 0 0 1rem 0 !important;
+    margin: 0 0 1rem 0 !important;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span:nth-child(1) {
+    font-size: 1.25rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .name span:nth-child(2) {
+    font-size: 2.25rem;
+    margin: -.5rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .address {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    margin: 0 0 -0.25rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .tel {
+    font-size: 1.2rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .open {
+    font-size: 1.2rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .gm {
+    font-size: 1.25rem;
+    margin: 3.25rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .details .inBlock .snsHolder {
+    height: 1.5rem;
+    margin: 1rem 0 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+  section#ShopAccess .Section .Contents .Holder.Harebare .imgArea {
+    margin: 3rem auto 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .gmArea {
+    margin: 4.5rem auto 0;
+  }
+  section#ShopAccess .Section .Contents .Holder .gmArea .gm {
+    aspect-ratio: 4/2;
+  }
+  section#ShopAccess .Section .Contents .Holder .gmArea p {
+    font-size: .9rem;
+    margin: 1rem auto 0;
+  }
+  
+  section#ShopAccess .Section .Contents .Holder.Harebare .textArea .details .Logo {
+    aspect-ratio: 1/1.35;
+  }
+  section#ShopAccess .Section .Contents .shopList {
+    aspect-ratio: 880/191;
+    margin: 0 auto;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve {
+    justify-content: space-between;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve a {
+    width: 12rem;
+    font-size: 1.2rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve ul {
+    width: calc(100% - 12rem);
+  }
+
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li span:nth-child(1) {
+    font-size: 1.4rem;
+    height: 1.7rem;
+    line-height: 1.6rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li span:nth-child(2) {
+    font-size: 1.5rem;
+    margin: 0 0 0 .5rem;
+  }
+  section#ShopAccess .Section .Contents .Holder .textArea .reserve ul li.note {
+    font-size: .8rem;
+  }
+  
+
+
+}
+
+
+
+

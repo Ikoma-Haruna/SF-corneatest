@@ -1,7 +1,8 @@
 section#ConceptMovie {
   position: relative;
   aspect-ratio: 1090 / 690;
-  margin: 10rem auto;
+  /* margin: 10rem auto; */
+  margin: 0 auto 10rem;
 }
 section#ConceptMovie .Section {
   /* padding: 19.5rem 0; */
@@ -119,7 +120,7 @@ section#ConceptMovie .Section .Contents:hover .bg {
 
 @media only screen and (max-width: 835px) {
   section#ConceptMovie .Section {
-    padding: 27rem 0 6.5rem;
+    /* padding: 27rem 0 6.5rem; */
     height: auto;
   }
   section#ConceptMovie .Section .Contents {

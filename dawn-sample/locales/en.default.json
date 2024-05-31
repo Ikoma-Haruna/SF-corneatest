@@ -130,7 +130,7 @@
         "play_video": "Play video"
       },
       "quantity": {
-        "label": "Quantity",
+        "label": "数量",
         "input_label": "Quantity for {{ product }}",
         "increase": "Increase quantity for {{ product }}",
         "decrease": "Decrease quantity for {{ product }}",
@@ -298,7 +298,7 @@
         "product": "Product",
         "price": "Price",
         "total": "Total",
-        "quantity": "Quantity",
+        "quantity": "数量",
         "image": "Product image"
       },
       "update": "Update",
@@ -323,9 +323,9 @@
       "view_all": "View all"
     },
     "collection_template": {
-      "empty": "No products found",
+      "empty": "現在該当商品はありません。",
       "title": "Collection",
-      "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">remove all</a>"
+      "use_fewer_filters_html": ""
     },
     "video": {
       "load_video": "Load video: {{ description }}"
@@ -446,7 +446,7 @@
       "product": "Product",
       "sku": "SKU",
       "price": "Price",
-      "quantity": "Quantity",
+      "quantity": "数量",
       "total": "Total",
       "total_refunded": "Refunded",
       "fulfilled_at_html": "Fulfilled {{ date }}",

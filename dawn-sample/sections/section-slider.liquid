@@ -1,17 +1,24 @@
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 {{ 'section-slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
 
-<section id="sliderWrapper">
-  <div class="sliderHolder">
+<section id="sliderWrapper" class="swiper">
+  <div class="sliderHolder swiper-wrapper">
     {% for block in section.blocks %}
       {%- liquid
         assign http = "http://"
         assign domain = shop.domain
         assign url = "/cdn/shop/"
-        assign img = block.settings.products.featured_media
+        assign img01 = block.settings.products.media[0]
+        assign img02 = block.settings.products.media[1]
       -%}
-    <a class="sliderBlock" href="{{ block.settings.products.url }}">
+    <a class="sliderBlock swiper-slide" href="{{ block.settings.products.url }}">
+      <div class="imgArea">
+        <div class="img" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img01 }}')"></div>
+        <div class="img" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img02 }}')"></div>
+      </div>
       <div class="Name">{{ block.settings.products.title }}</div>
-      <div class="imgArea" style="background-image: url('{{ http }}{{ domain }}{{ url }}{{ img }}')"></div>
+      <p>{{ block.settings.products.metafields.custom.summary }}</p>
       {% comment %} {{ block.settings.products.description }} {% endcomment %}
       <div class="textArea">
         <div class="price">{{ block.settings.products.price | money_without_currency}}</div>
@@ -20,7 +27,11 @@
     </a>
     {% endfor %}
   </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </section>
+
+
 
 {% schema %}
 {
@@ -54,3 +65,6 @@
 }
 {% endschema %}
 
+
+
+<script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>

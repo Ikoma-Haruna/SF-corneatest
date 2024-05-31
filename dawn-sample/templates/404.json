@@ -1,10 +1,19 @@
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {
+      }
+    },
+    "section_concept_C3ax3N": {
+      "type": "section-concept",
+      "settings": {
+        "title": "CONCEPT"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_concept_C3ax3N"
   ]
 }

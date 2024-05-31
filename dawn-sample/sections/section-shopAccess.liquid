@@ -1,0 +1,108 @@
+{{ 'section-shopAccess.css' | asset_url | stylesheet_tag }}
+
+<section id="ShopAccess" class="page-width">
+  <div class="Section">
+    {%- if section.settings.title != blank -%}
+      <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.title }}
+      </h2>
+    {%- endif -%}
+    <div class="Contents widthM">
+      <div class="Holder Harebare slideUp">
+        <div class="textArea">
+          <div class="cat">Beer & Restaurant </div>
+          <div class="details"> 
+            <div class="Logo" style="background-image: url('https://hnb.beer/assets/img/index/shopLogoHB.png'); background-size: 80%;"></div>
+            <div class="inBlock"> 
+              <h3 class="name"><span>CRAFT BEERと炭火</span><span>はればれ</span></h3>
+              <div class="address">広島県広島市中区大手町1-5-10</div><a class="tel" href="tel:082-236-9313">082-236-9313</a>
+              <ul class="open"> 
+                <li>12:00-22:00</li>
+              </ul>
+              <ul class="snsHolder"> 
+                <li class="ig"><a target="_blank" rel="noopener" href="https://www.instagram.com/harebare_hiroshima/?hl=ja"></a></li>
+                <li class="x"><a target="_blank" rel="noopener" href="https://twitter.com/harebare_beer"></a></li>
+                <li class="fb"><a target="_blank" rel="noopener" href="https://www.facebook.com/harebarehiroshima/"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p>HNBオリジナルビールをはじめ、レモンサワーやハイボール、カクテル、ワインにカフェメニューに、焼き鳥や炭火料理やパブメニュー、スィーツ、ヴィーガンメニューまで幅広く取り揃える炭火焼きのお店です。</p>
+          <div class="reserve"> 
+            <ul> 
+              <li><span>1F</span><span>約30席</span></li>
+              <li><span>1.5F</span><span>約40席</span></li>
+              <li class="note">※各種宴会・パーティもお待ちしております</li>
+            </ul><a target="_blank" rel="noopener" href="https://tabelog.com/hiroshima/A3401/A340111/34027287/">ご予約はこちら</a>
+          </div>
+        </div>
+        <div class="imgArea" style="background-image: url('https://hnb.beer/assets/img/index/shopHB.jpg')"></div>
+        <div class="gmArea">
+          <div class="gm">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3292.282360056424!2d132.4530611122766!3d34.394168399484556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355aa3bcfd7a15fd%3A0xe49dd0c2a2d5c992!2zQ1JBRlQgQkVFUuOBqOeCreeBqyDjga_jgozjgbDjgow!5e0!3m2!1sja!2sjp!4v1710992947190!5m2!1sja!2sjp" width="600" height="450" style="border:0;" aria-hidden="false" tabindex="0" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <p>バス・電停「紙屋町」「本通り」徒歩３分 ／ 広島バスセンター 徒歩３分</p>
+        </div>
+      </div>
+      <div class="Holder slideUp">
+        <div class="textArea"> 
+          <div class="cat">PUB & KITCHEN</div>
+          <div class="details"> 
+            <div class="Logo" style="background-image: url('https://hnb.beer/assets/img/index/shopLogoGG.png'); background-size: 90%;"></div>
+            <div class="inBlock"> 
+              <h3 class="name"><span>WORLD BEER PUB & KITCHEN</span><span>GOLDEN GARDEN</span></h3>
+              <div class="address">広島県広島市中区三川町3-3 志津ビル 1F</div><a class="tel" href="tel:082-247-6768">082-247-6768</a>
+              <ul class="snsHolder"> 
+                <li class="ig"><a target="_blank" rel="noopener" href="https://www.instagram.com/goldengarden_beer/?hl=ja"></a></li>
+                <li class="x"><a target="_blank" rel="noopener" href="https://twitter.com/GOLDENGARDEN_07"></a></li>
+                <li class="fb"><a target="_blank" rel="noopener" href="https://www.facebook.com/goldengarden/?locale=ja_JP"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p>随時種類が変わる樽生ビール８種類と100種類以上のボトルビールのWORLD BEERを中心に、イタリアン出身のシェフの日替わり惣菜などが食べられるPUB & KITCHEN。</p>
+        </div>
+        <div class="imgArea" style="background-image: url('https://hnb.beer/assets/img/index/shopGG.jpg')"></div>
+      </div>
+      <div class="Holder slideUp">
+        <div class="textArea"> 
+          <div class="cat">Beer & Cafè</div>
+          <div class="details"> 
+            <div class="Logo" style="background-image: url('https://hnb.beer/assets/img/index/shopLogoRB.png')"></div>
+            <div class="inBlock"> 
+              <h3 class="name"><span>Japan Craft Beer Cafè</span><span>RAKU BEER</span></h3>
+              <div class="address">広島県広島市中区三川町3-3 志津ビル 1F</div><a class="tel" href="tel:082-247-6768">082-247-6768</a>
+              <ul class="snsHolder"> 
+                <li class="ig"><a target="_blank" rel="noopener" href="https://www.instagram.com/rakubeer/?hl=ja"></a></li>
+                <li class="x"><a target="_blank" rel="noopener" href="https://twitter.com/rakubeer"></a></li>
+                <li class="fb"><a target="_blank" rel="noopener" href="https://www.facebook.com/rakubeer/?locale=ja_JP"></a></li>
+              </ul>
+            </div>
+          </div>
+          <p>日本のクラフトビール専門店として全国から届く、常時変わる樽生15TAPと食事が楽しめるダイニングカフェ。<br class="pc">週末は、昼から楽しんでいただけるお店です。</p>
+        </div>
+        <div class="imgArea" style="background-image: url('https://hnb.beer/assets/img/index/shopRB.jpg')"></div>
+      </div><a class="shopList" href="/pages/retail-store"><span>other shop list </span><span>取扱店舗一覧</span></a>
+    </div>
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "SHOP&ACCESS",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "SHOP&ACCESS",
+      "label": "SHOP&ACCESS"
+    }
+  ],
+  "presets": [
+    {
+      "name": "SHOP&ACCESS" 
+    }
+  ]
+}
+{% endschema %}
+

@@ -6,14 +6,33 @@ body {
   height: 100%;
   tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: noto-sans-cjk-jp, sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif !important;
   font-style: normal;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   font-display: swap;
   color: rgb(35, 24, 21);
   background-color: rgb(255, 255, 255);
+  padding: 6rem 0 0;
 }
+#MainContent {
+  margin: 5rem 0 0;
+}
+section {
+  margin: 0 auto 10rem !important;
+}
+.clickNone {
+  pointer-events: none;
+}
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+
+
+
 
 
 h1,h2 {
@@ -28,6 +47,48 @@ h1,h2 {
   margin: 0 auto 3.8rem !important;
   text-transform: uppercase !important;
 }
+.section-header {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+.header__active-menu-item {
+  text-decoration: unset !important;
+}
+#Header .list-menu {
+  font-family: roboto, sans-serif !important;
+  font-style: normal !important;
+  -webkit-font-feature-settings: "palt" !important;
+  font-feature-settings: "palt" !important;
+  font-display: swap !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  text-transform: uppercase !important;
+}
+#Header .list-menu span {
+  font-size: 1.2rem;
+}
+.cart__footer-wrapper {
+  margin: 0 0 10rem;
+}
+.cart__footer-wrapper .totals__total {
+  font-size: 1.6rem !important;
+  margin: 0 !important;
+}
+.title-wrapper-with-link {
+  position: relative;
+}
+.title-wrapper-with-link a {
+  position: absolute;
+  right: 0;
+}
+#main-search-filters {
+  display: none;
+}
+
+
+
+
 
 header#Header {
   width: 100%;
@@ -74,8 +135,388 @@ header#Header #headerNav {
 
 
 
+.collection .grid__item .card__content .card__heading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: calc(1.25rem * 1.5);
+  letter-spacing: 0.1em;
+  width: 80%;
+}
+.collection .grid__item .card__content .price__regular {  
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  font-display: swap;
+  /* font-weight: 700; */
+  letter-spacing: 0;
+}
+.collection .grid__item .card__content .price__regular::after {
+  content: '（税込）';
+  font-size: 1rem;
+  margin: 0 0 0 .5rem;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
 
 
+
+
+
+.collection-hero .collection-hero__description {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.75rem !important;
+  line-height: 2.9rem !important;
+  letter-spacing: 0.2em;
+  width: 100%;
+  max-width: 100%;
+  margin: -3rem auto 2rem !important;
+}
+.product-grid-container {
+  margin: 0 auto 5rem;
+}
+.product-grid-container .title--primary {
+  font-weight: 500 !important;
+  font-size: 1.35rem !important;
+  line-height: 2.6rem !important;
+  letter-spacing: 0.12em;
+  margin: 1.05rem auto 0 0 !important;
+  word-break: break-all;
+}
+
+
+
+
+.product__info-wrapper .product__title h1 {
+  text-align: left !important;
+  font-size: 2.5rem !important;
+  margin: 0 auto 1.8rem !important;
+}
+.product__info-wrapper .price__container .price__regular {  
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  font-display: swap;
+  /* font-weight: 700; */
+  letter-spacing: 0;
+}
+.product__info-wrapper .price__container .price__regular::after {
+  content: '（税込）';
+  font-size: 1.25rem;
+  margin: 0 0 0 .5rem;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.product__info-wrapper .price__badge-sold-out {
+  margin: .75rem 0 0 1rem;
+}
+.product__info-wrapper .product__description {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+
+
+
+
+
+.collage .collage__item .card__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.collage .collage__item .card__content .card__information {
+  padding: 0;
+}
+.collage .collage__item .card__content .card__information .card__heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-feature-settings: "palt";
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 4.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0 0 1.5rem;
+}
+.collage .collage__item:nth-child(1) .card__content .card__information .card__heading {
+  font-size: 7rem;
+  padding: 2.5rem 0 0 1.5rem;
+}
+.collage .collage__item .card__content .card__information .card__heading a {
+  width: 100%;
+  height: 100%;
+}
+.collage .collage__item .card__content .card__information .card__heading a span svg {
+  display: none;
+}
+.collage .collage__item .card__content .card__information .card__heading a span::after {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0.95rem 0px 0px;
+  position: absolute;
+  left: 1.8rem;
+}
+.collage .collage__item:nth-child(1) .card__content .card__information .card__heading a span::after {
+  content: 'category | 001';
+  top: 8rem;
+}
+.collage .collage__item:nth-child(2) .card__content .card__information .card__heading a span::after {
+  content: 'category | 002';
+  top: 7rem;
+}
+.collage .collage__item:nth-child(3) .card__content .card__information .card__heading a span::after {
+  content: 'category | 003';
+  top: 11.5rem;
+}
+.collage .collage__item .card__media {
+  background-color: rgb(0, 0, 0);
+}
+.collage .collage__item .card__media img {
+  opacity: .8;
+}
+
+
+
+
+.lowPage p {
+  font-size: 1.4rem;
+  margin: .5rem 0;
+}
+.lowPage .note {
+  font-size: 1rem;
+}
+.lowPage h1,
+.lowPage p {
+  font-family: noto-sans-cjk-jp, sans-serif !important;
+}
+.lowPage h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 7rem 0 1rem;
+  padding: 1rem 2rem .9rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+.lowPage.guide h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0 0 .5rem;
+  margin: 4rem 0 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.lowPage.guide h5,
+.lowPage.privacy-policy h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0 0 .5rem;
+  margin: 4rem 0 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.lowPage.guide h6 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 2rem 0 1.5rem;
+}
+
+
+.lowPage.retail-store .TableWrapper {
+  overflow-x: scroll;
+  padding: 1px;
+}
+.lowPage.retail-store .TableWrapper table {
+  width: 100%;
+  min-width: 74rem;
+}
+.lowPage.retail-store .TableWrapper table td {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.lowPage.retail-store .TableWrapper table td:nth-child(1) {
+  width: 9%;
+  text-align: center;
+}
+.lowPage.retail-store .TableWrapper table td:nth-child(4) {
+  width: 14%;
+}
+.lowPage.retail-store .TableWrapper table td:nth-child(5),
+.lowPage.retail-store .TableWrapper table td:nth-child(6) {
+  width: 8%;
+  text-align: center;
+}
+
+.lowPage.guide ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+.lowPage.guide .PageHeader ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.lowPage.guide .PageHeader ul li {
+  width: calc(50% - .5rem);
+  border: 1px solid rgba(0, 0, 0, .5);
+  padding: 1rem;
+  text-align: center;
+}
+.lowPage.guide .PageHeader ul li a {
+  text-decoration: unset;
+}
+.lowPage.guide .TableWrapper {
+  overflow-x: scroll;
+  padding: 1px;
+}
+.lowPage.guide .TableWrapper table {
+  width: 100%;
+  min-width: 50rem;
+  margin: 1rem 0 0;
+}
+.lowPage.guide .TableWrapper table th,
+.lowPage.guide .TableWrapper table td {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.lowPage.guide .TableWrapper table th:nth-child(1),
+.lowPage.guide .TableWrapper table td:nth-child(1) {
+  width: 50%;
+  text-align: left;
+}
+.lowPage.guide .TableWrapper table th:nth-child(2),
+.lowPage.guide .TableWrapper table td:nth-child(2),
+.lowPage.guide .TableWrapper table th:nth-child(3),
+.lowPage.guide .TableWrapper table td:nth-child(3) {
+  width: 25%;
+  text-align: left;
+}
+
+.lowPage.law .TableWrapper {
+  overflow-x: scroll;
+  padding: 1px;
+}
+.lowPage.law .TableWrapper table {
+  width: 100%;
+  min-width: 100%;
+  margin: 1rem 0 0;
+}
+.lowPage.law .TableWrapper table th,
+.lowPage.law .TableWrapper table td {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.lowPage.law .TableWrapper table td:nth-child(1) {
+  width: 20rem;
+  text-align: left;
+}
+.lowPage.law .TableWrapper table td:nth-child(2) {
+  width: calc(100% - 20rem);
+  text-align: left;
+}
+
+.lowPage.faq .accordion {
+  margin: 3rem 0;
+  /* max-width: 60vw; */
+}
+.lowPage.faq .toggle {
+  display: none;
+}
+.lowPage.faq .option {
+  position: relative;
+  margin-bottom: .5rem;
+}
+.lowPage.faq .title,
+.content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+.lowPage.faq .title {
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  padding: 1rem 6rem 1rem 1rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+.lowPage.faq .title::after,
+.lowPage.faq .title::before {
+  content: "";
+  position: absolute;
+  right: 3rem;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  height: 2rem;
+  background-color: #999;
+  transition: all 0.3s;
+}
+.lowPage.faq .title::after {
+  transform: rotate(90deg);
+}
+.lowPage.faq .content {
+  max-height: 0;
+  overflow: hidden;
+}
+.lowPage.faq .content p {
+  margin: 0;
+  padding: 2rem 6rem 2rem 1rem;
+}
+.lowPage.faq .content p .note {
+  display: inline-block;
+  width: 100%;
+}
+.lowPage.faq .toggle:checked + .title + .content {
+  max-height: 500px;
+  transition: all 1.5s;
+}
+.lowPage.faq .toggle:checked + .title::before {
+  transform: rotate(90deg) !important;
+}
+
+.lowPage.contact {
+  margin: 0 auto -10rem;
+}
+.lowPage.contact .textArea {
+  background-color: rgba(0, 0, 0, .1);
+  padding: 2rem 3rem;
+  margin: 3rem 0 0;
+}
+
+
+
+
+footer#Footer ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+footer#Footer a {
+  text-decoration: unset;
+}
 
 footer#Footer .Section {
   background-color: #EFEFEF;
@@ -115,6 +556,8 @@ footer#Footer .Section .Contents .ConpanyMenu {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
+  order: 2;
+  margin: 12rem 0 0;
 }
 footer#Footer .Section .Contents .ConpanyMenu .Logo {
   background-image: url("https://hnb.beer/assets/img/common/Logo.png");
@@ -122,11 +565,10 @@ footer#Footer .Section .Contents .ConpanyMenu .Logo {
   aspect-ratio: 379/467;
 }
 footer#Footer .Section .Contents .ConpanyMenu .LinkHolder {
-  width: calc(100% - 16.3rem - 14.5%);
+  width: 100%;
   margin: 0 0 0.5rem;
-  position: absolute;
-  top: 8.25rem;
-  right: -1rem;
+  display: flex;
+  gap: 4rem;
 }
 footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
   display: -webkit-box;
@@ -143,6 +585,8 @@ footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 2rem;
+  width: 24rem;
 }
 footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li {
   background-size: 100% 100%;
@@ -151,6 +595,7 @@ footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li a {
   width: 100%;
   height: 100%;
   color: rgb(35, 24, 21);
+  display: inline-block;
 }
 footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.ig {
   background-image: url("https://hnb.beer/assets/img/common/snsIG.png");
@@ -172,42 +617,8 @@ footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.note {
   height: 4rem;
   aspect-ratio: 218/83;
 }
-footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online {
-  width: 100%;
-  aspect-ratio: 489/126;
-  border: 1px solid rgb(35, 24, 21);
-  font-size: 2.15rem;
-  margin: 2.5rem 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: uppercase;
-}
-footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 0 0.25rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online:hover a {
-  letter-spacing: 0.05em;
-}
 footer#Footer .Section .Contents .ConpanyMenu .BtoB {
-  width: calc(100% - 17.3rem - 14.5%);
+  width: calc(100% - 24rem - 4rem);
   aspect-ratio: 489/194;
   border: 1px solid rgb(35, 24, 21);
   text-align: center;
@@ -236,8 +647,8 @@ footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(1) {
           font-feature-settings: "palt";
   font-display: swap;
   font-weight: 200;
-  font-size: 5rem;
-  letter-spacing: -0.075em;
+  font-size: 3rem;
+  letter-spacing: -0.01em;
 }
 footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(2) {
   font-family: noto-sans-cjk-jp, sans-serif;
@@ -252,23 +663,44 @@ footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(2) {
 footer#Footer .Section .Contents .ConpanyMenu .cw {
   width: 100%;
   font-size: 1.3rem;
-  margin: 3.75rem 0 0;
+  margin: 0.75rem 0 0;
 }
 footer#Footer .Section .Contents .MainMenu {
   width: 50%;
   margin: -0.75rem 0 0;
+  order: 1;
 }
 footer#Footer .Section .Contents .MainMenu h2 {
-  font-size: 4rem;
+  text-align: left;
+  text-transform: unset !important;
+  text-align: left !important;
 }
 footer#Footer .Section .Contents .MainMenu ul {
   font-size: 2rem;
   line-height: 2.45rem;
   margin: 4rem 0 0;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer#Footer .Section .Contents .MainMenu ul:nth-child(2) {
+  margin: 0;
+}
+footer#Footer .Section .Contents .MainMenu ul:nth-child(2) li {
+  width: 100%;
+}
+footer#Footer .Section .Contents .MainMenu ul:nth-child(2) ul {
+  gap: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  margin: 0;
+  opacity: .8;
+}
+footer#Footer .Section .Contents .MainMenu ul:nth-child(2) ul li{
+  width: auto;
 }
 footer#Footer .Section .Contents .MainMenu ul li {
-  width: 100%;
+  width: 50%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -279,119 +711,38 @@ footer#Footer .Section .Contents .MainMenu ul li a {
   color: rgb(35, 24, 21);
   width: 100%;
 }
-footer#Footer .Section .Contents .MainMenu ul li.BtoB {
-  margin: 0 0 0 7.86%;
-  height: 17.8rem;
+footer#Footer .Section .Contents .MainMenu ul.otherMenu {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+  margin: 3rem 0 0;
+  padding: 3rem 0 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+footer#Footer .Section .Contents .MainMenu ul.otherMenu li {
   width: auto;
-  aspect-ratio: 243/329;
-  background-color: rgb(35, 24, 21);
+  margin: 0 1rem 0 0;
+  padding: 0 1rem 0 0;
+  position: relative;
 }
-footer#Footer .Section .Contents .MainMenu ul li.BtoB a {
-  color: rgb(255, 255, 255);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+footer#Footer .Section .Contents .MainMenu ul.otherMenu li::after {
+  content: '';
+  width: 1px;
   height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  background-color: black;
+  position: absolute;
+  right: 0;
 }
-footer#Footer .Section .Contents .MainMenu ul li.BtoB a span {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+footer#Footer .Section .Contents .MainMenu ul.otherMenu li:last-child {
+  margin: 0;
+  padding: 0;
 }
-footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(1) {
-  font-size: 3.15rem;
-  font-weight: 400;
-}
-footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(2) {
-  font-size: 0.85rem;
-  font-family: noto-sans-cjk-jp, sans-serif;
-  font-style: normal;
-  -webkit-font-feature-settings: "palt";
-          font-feature-settings: "palt";
-  font-display: swap;
-  font-weight: 300;
-  letter-spacing: 0.225em;
-}
-footer#Footer .Section .Contents .MainMenu ul li.BtoB a span.arrow {
+footer#Footer .Section .Contents .MainMenu ul.otherMenu li:last-child::after {
   display: none;
-}
-footer#Footer .Section .Contents .MainMenu ul li:hover {
-  padding: 0 0 0 1rem;
 }
 @media (hover: hover) {
   footer#Footer .Section .Contents .MainMenu ul li:hover {
     cursor: pointer;
   }
-}
-footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB {
-  padding: 0;
-}
-footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB a span:nth-child(1) {
-  letter-spacing: 0.05em;
-}
-footer#Footer .Section .Contents .online {
-  position: absolute;
-  bottom: 8rem;
-  right: 0;
-  width: 13.5rem;
-  background-color: rgb(35, 24, 21);
-  aspect-ratio: 275/412;
-  border-radius: 0.5rem;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-footer#Footer .Section .Contents .online .icon {
-  background-image: url("https://hnb.beer/assets/img/common/iconEC.png");
-  width: 4.3rem;
-  aspect-ratio: 57/50;
-  margin: 0 1rem 1rem 0;
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-}
-footer#Footer .Section .Contents .online span {
-  text-decoration: underline;
-  font-family: roboto, sans-serif;
-  font-style: normal;
-  -webkit-font-feature-settings: "palt";
-          font-feature-settings: "palt";
-  font-display: swap;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-footer#Footer .Section .Contents .online:hover span {
-  letter-spacing: 0.1em;
-}
-footer#Footer .Section .Contents .BtoB {
-  display: none;
 }
 footer#Footer .Section .Foot {
   width: 100%;
@@ -452,6 +803,26 @@ footer#Footer .Section .Foot p span {
   }
 
 
+
+  .collage .collage__item .card__content .card__information .card__heading {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .collage .collage__item:nth-child(1) .card__content .card__information .card__heading {
+    font-size: 5rem;
+  }
+  .collage .collage__item:nth-child(1) .card__content .card__information .card__heading a span::after {
+    top: 6.5rem;
+  }
+  .collage .collage__item:nth-child(2) .card__content .card__information .card__heading a span::after {
+    top: 5rem;
+  }
+  .collage .collage__item:nth-child(3) .card__content .card__information .card__heading a span::after {
+    top: 8.5rem;
+  }
+  
+
+
   footer#Footer .Section {
     background-color: #EFEFEF;
     font-family: roboto, sans-serif;
@@ -462,6 +833,7 @@ footer#Footer .Section .Foot p span {
     font-weight: 700;
     width: 100%;
     padding: 0;
+    overflow-x: hidden;
   }
   footer#Footer .Section .Contents {
     width: 85.86%;
@@ -481,329 +853,30 @@ footer#Footer .Section .Foot p span {
         flex-wrap: wrap;
   }
   footer#Footer .Section .Contents .ConpanyMenu {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
-    display: unset;
-    text-align: center;
-    margin: 0;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .Logo {
-    display: inline-block;
-    background-image: url("https://hnb.beer/assets/img/common/Logo.png");
-    width: 16.3rem;
-    aspect-ratio: 379/467;
+    width: 23rem;
+    margin: 11rem 0 0;
   }
   footer#Footer .Section .Contents .ConpanyMenu .LinkHolder {
-    width: 26rem;
-    margin: 3.25rem auto 0;
-    position: unset;
-    top: auto;
-    right: auto;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li {
-    background-size: 100% 100%;
-    -webkit-filter: unset;
-            filter: unset;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li a {
-    width: 100%;
-    height: 100%;
-    color: rgb(35, 24, 21);
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.ig {
-    background-image: url("https://hnb.beer/assets/img/common/snsIG.png");
-    height: 2.6rem;
-    aspect-ratio: 1/1;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.x {
-    background-image: url("https://hnb.beer/assets/img/common/snsX.png");
-    height: 2.6rem;
-    aspect-ratio: 1/1;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.fb {
-    background-image: url("https://hnb.beer/assets/img/common/snsFB.png");
-    height: 2.6rem;
-    aspect-ratio: 21/40;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.note {
-    background-image: url("https://hnb.beer/assets/img/common/snsNoteWide.png");
-    height: 4rem;
-    aspect-ratio: 218/83;
-    margin: 0 -1rem 0 -1rem;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online {
-    width: 100%;
-    aspect-ratio: 489/126;
-    border: 1px solid rgb(35, 24, 21);
-    font-size: 2.15rem;
-    margin: 1.6rem 0 0;
-    letter-spacing: 0.08em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-transform: uppercase;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 0 0.25rem;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.online:hover a {
-    letter-spacing: 0.05em;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: .5rem;
   }
   footer#Footer .Section .Contents .ConpanyMenu .BtoB {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 26rem;
-    margin: 2rem auto 0;
-    aspect-ratio: 489/194;
-    border: 1px solid rgb(35, 24, 21);
-    text-align: center;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .BtoB span {
-    color: rgb(35, 24, 21);
-    display: inline-block;
     width: 100%;
+    aspect-ratio: 489 / 154;
   }
-  footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(1) {
-    font-size: 5rem;
-    line-height: 5rem;
-    margin: -1rem 0 0;
-  }
-  footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(2) {
-    font-size: 1.3rem;
-    letter-spacing: 0;
-    margin: 1rem 0 0;
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul {
+    margin: 0 -1rem 0 0;
   }
   footer#Footer .Section .Contents .ConpanyMenu .cw {
-    width: 100%;
-    font-size: 1.3rem;
-    margin: 3.75rem 0 0;
+    font-size: 1rem;
+    text-align: right;
   }
   footer#Footer .Section .Contents .MainMenu {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    width: 100%;
-    margin: 3.25rem 0 0;
+    width: calc(100% - 23rem - 5rem);
   }
   footer#Footer .Section .Contents .MainMenu h2 {
-    font-size: 4rem;
-    display: none;
-  }
-  footer#Footer .Section .Contents .MainMenu ul {
-    line-height: 3.25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-column-count: 3;
-       -moz-column-count: 3;
-            column-count: 3;
-    margin: 4rem 0 0;
-    height: 10rem;
-    font-size: 2.4rem;
-    position: relative;
-    width: 100%;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    margin: 0 !important;
-    width: 33.333%;
-    font-size: 2.4rem;
-    line-height: 3.3rem;
-    text-align: center;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.clickNone {
-    opacity: 0.2;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li a {
-    color: rgb(35, 24, 21);
-    width: 100%;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:nth-child(1), footer#Footer .Section .Contents .MainMenu ul li:nth-child(2), footer#Footer .Section .Contents .MainMenu ul li:nth-child(3), footer#Footer .Section .Contents .MainMenu ul li:nth-child(4) {
-    margin: 0 4.51% 1.5rem 0;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:nth-child(5), footer#Footer .Section .Contents .MainMenu ul li:nth-child(6), footer#Footer .Section .Contents .MainMenu ul li:nth-child(7), footer#Footer .Section .Contents .MainMenu ul li:nth-child(8) {
-    margin: 0 0 1.5rem 0;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB {
-    aspect-ratio: 243/329;
-    background-color: rgb(35, 24, 21);
-    width: 55.56%;
-    height: 9.75rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto !important;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB a {
-    color: rgb(255, 255, 255);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(1) {
-    font-size: 3.15rem;
-    font-weight: 400;
-    line-height: 2rem;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span:nth-child(2) {
-    font-size: 1.6rem;
-    font-family: noto-sans-cjk-jp, sans-serif;
-    font-style: normal;
-    -webkit-font-feature-settings: "palt";
-            font-feature-settings: "palt";
-    font-display: swap;
-    font-weight: 300;
-    letter-spacing: 0.225em;
-    margin: 1.2rem 0 0;
-    line-height: 2rem;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li.BtoB a span.arrow {
-    display: none;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:hover {
-    padding: 0 0 0 1rem;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:hover {
-    cursor: pointer;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB {
-    padding: 0;
-  }
-  footer#Footer .Section .Contents .MainMenu ul li:hover.BtoB a span:nth-child(1) {
-    letter-spacing: 0.05em;
-  }
-  footer#Footer .Section .Contents .cw {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-    width: 100%;
-    font-size: 1.3rem;
-    margin: 3.75rem 0 0;
-    text-align: center;
-  }
-  footer#Footer .Section .Contents .online {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    width: 26rem;
-    aspect-ratio: 412/185;
-    margin: 2rem auto 0;
-    position: unset;
-    background-color: rgb(35, 24, 21);
-    color: rgb(255, 255, 255);
-  }
-  footer#Footer .Section .Contents .online .icon {
-    -webkit-filter: brightness(0) invert(1);
-            filter: brightness(0) invert(1);
-  }
-  footer#Footer .Section .Contents .online span {
-    font-size: 2.5rem;
-    line-height: 3rem;
-  }
-  footer#Footer .Section .Contents .BtoB {
-    display: none;
-  }
-  footer#Footer .Section .Foot {
-    width: 100%;
-    background-color: rgb(35, 24, 21);
-    aspect-ratio: 1000/103;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  footer#Footer .Section .Foot p {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: noto-sans-cjk-jp, sans-serif;
-    font-style: normal;
-    -webkit-font-feature-settings: "palt";
-            font-feature-settings: "palt";
-    font-display: swap;
-    font-weight: 400;
-    font-size: 1.15rem;
-    letter-spacing: 0.12em;
-  }
-  footer#Footer .Section .Foot p span {
-    font-weight: 700;
+    width: 100vw;
   }
 
 
@@ -825,6 +898,12 @@ footer#Footer .Section .Foot p span {
     font-size: 266.6%;
     font-size: 2.666vw;
   }
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
 
   header#Header h1 {
     width: calc(24rem / 1.25);
@@ -838,21 +917,121 @@ footer#Footer .Section .Foot p span {
 
 
 
+  .collection-hero__title + .collection-hero__description {
+    font-size: 1.4rem !important;
+    line-height: 2.1rem !important;
+    letter-spacing: .1em;
+  }
+
+
+
+  .product__info-wrapper .product__title h1 {
+    font-size: 2rem !important;
+  }
+  .product__info-wrapper .product__description {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+  
+
+
+
+  .collage .collage__item .card__content .card__information .card__heading {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+  }
+  .collage .collage__item:nth-child(1) .card__content .card__information .card__heading {
+    font-size: 4rem;
+  }
+  .collage .collage__item:nth-child(1) .card__content .card__information .card__heading a span::after {
+    top: 5.5rem;
+  }
+  .collage .collage__item:nth-child(2) .card__content .card__information .card__heading a span::after {
+    top: 4rem;
+  }
+  .collage .collage__item:nth-child(3) .card__content .card__information .card__heading a span::after {
+    top: 6.5rem;
+  }
+
+
+
+  .lowPage.law .TableWrapper table td:nth-child(1) {
+    width: 10rem;
+    text-align: left;
+  }
+  .lowPage.law .TableWrapper table td:nth-child(2) {
+    width: calc(100% - 10rem);
+    text-align: left;
+  }
+  
+
+
+
   footer#Footer .Section .Contents {
-    width: 100%;
+    padding: 3rem 0;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu {
+    width: 19rem;
+    margin: 5rem auto 0;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .BtoB span:nth-child(1) {
+    font-size: 2.5rem;
+    padding: 0 0 .15rem;
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.ig,
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.x,
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.fb {
+    height: calc(2.6rem * .75);
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .LinkHolder ul li.note {
+    height: calc(4rem * .75);
+  }
+  footer#Footer .Section .Contents .ConpanyMenu .cw {
+    text-align: center;
+    letter-spacing: 0;
   }
   footer#Footer .Section .Contents .MainMenu {
-    margin: 0;
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .MainMenu h2 {
+    /* width: 100%;
+    text-align: center !important; */
+    display: none;
   }
   footer#Footer .Section .Contents .MainMenu ul {
-    height: auto;
+    font-size: 1.8rem;
     text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    gap: .5rem;
   }
   footer#Footer .Section .Contents .MainMenu ul li {
     width: 100%;
   }
+  footer#Footer .Section .Contents .MainMenu ul:nth-child(2) {
+    margin: .5rem 0 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul:nth-child(2) ul {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    width: 50%;
+    gap: 0;
+    margin: 0 auto;
+  }
+  footer#Footer .Section .Contents .MainMenu ul:nth-child(2) ul li {
+    width: 100%;
+  }
+  footer#Footer .Section .Contents .MainMenu ul.otherMenu {
+    justify-content: center;
+  }
+  footer#Footer .Section .Contents .MainMenu ul.otherMenu li:nth-child(3) {
+    margin: 0;
+    padding: 0;
+  }
+  footer#Footer .Section .Contents .MainMenu ul.otherMenu li:nth-child(3)::after {
+    display: none;
+  }
+  
+
+
+
 
 }

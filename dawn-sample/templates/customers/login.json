@@ -1,10 +1,22 @@
 {
   "sections": {
     "main": {
-      "type": "main-login"
+      "type": "main-login",
+      "settings": {
+        "enable_shop_login_button": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "section_concept_Y8qXJV": {
+      "type": "section-concept",
+      "settings": {
+        "title": "CONCEPT"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "section_concept_Y8qXJV"
   ]
 }

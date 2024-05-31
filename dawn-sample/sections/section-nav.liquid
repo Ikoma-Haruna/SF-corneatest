@@ -1,0 +1,38 @@
+{{ 'section-nav.css' | asset_url | stylesheet_tag }}
+
+<div id="sideMenu">
+  <div class="Contents"> 
+    <div class="LeftBlock"> 
+      <div class="LinkHolder">
+        <ul> 
+          <li class="ig"><a target="_blank" rel="noopener" href="https://www.instagram.com/hnb_beer/"></a></li>
+          <li class="x"><a target="_blank" rel="noopener" href="https://twitter.com/hnb_beer"></a></li>
+          <li class="fb"><a target="_blank" rel="noopener" href="https://www.facebook.com/hiroshimaNB/"></a></li>
+          <li class="note"><a target="_blank" rel="noopener" href="https://note.com/hiroshima_hnb/"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "navigation(sns)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "navigation(sns)",
+      "label": "navigation(sns)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "navigation(sns)" 
+    }
+  ]
+}
+{% endschema %}
+

@@ -37,3 +37,49 @@
     grid-column-gap: 2rem;
   }
 }
+
+
+
+/* 追記 */
+.field.field--select select {
+  line-height: 1.4rem;
+  background: none;
+}
+.field.field--select::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  color: #333;
+  line-height: 1;
+  width: 1rem;
+  height: 1rem;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  top: calc(50% - 1.5rem / 2);
+  right: 2rem;
+  bottom: auto;
+  left: auto;
+  transform: translateX(25%) rotate(135deg);
+}
+.field.field--select label {
+  font-size: 1rem;
+  top: calc(var(--inputs-border-width) + 0.5rem);
+  left: calc(var(--inputs-border-width) + 2rem);
+  letter-spacing: 0.04rem;
+}
+.contact__button button {
+  width: 100%;
+}
+.contact .form__message {
+  font-size: 1.4rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form__message svg {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem 0 0;
+}

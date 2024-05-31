@@ -1,139 +1,73 @@
 {
   "sections": {
-    "slider_em7pqx": {
-      "type": "slider",
+    "section_slider_yGi9md": {
+      "type": "section-slider",
       "blocks": {
-        "product_kqhB7J": {
+        "product_nnepmF": {
           "type": "product",
           "settings": {
-            "products": "testタイトル"
+            "products": "hnbオリジナル-ビックシルエットtシャツ-brewing-peace-blooming-smiles-new"
           }
         },
-        "product_GJGmmc": {
+        "product_EkiiqC": {
           "type": "product",
           "settings": {
-            "products": "testタイトル２"
+            "products": "hnbバレルエイジドビール-隣期桜変-ベルジャンipa-1本-hnb定番4本セット-稀少-限定"
+          }
+        },
+        "product_eQiL96": {
+          "type": "product",
+          "settings": {
+            "products": "バレルエイジドビール第二弾-隣期桜変-ベルジャンipa-3本セット-稀少-限定"
+          }
+        },
+        "product_NLj4Xt": {
+          "type": "product",
+          "settings": {
+            "products": "hnb定番6本セット-缶-g7サミット広島で使用されたビールも含む"
           }
         }
       },
       "block_order": [
-        "product_kqhB7J",
-        "product_GJGmmc"
+        "product_nnepmF",
+        "product_EkiiqC",
+        "product_eQiL96",
+        "product_NLj4Xt"
       ],
       "settings": {
         "title": "Slider"
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "disabled": true,
+    "section_concept_VM8RdA": {
+      "type": "section-concept",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Brewing Peace, Blooming Smiles.",
-            "heading_size": "h1"
-          }
-        },
-        "heading_WG38br": {
-          "type": "heading",
-          "settings": {
-            "heading": "ビールは平和だからこそ、おいしい",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、<br\/>広島の象徴でもある平和公園の東側、<br\/>本通りに入ってすぐにあるブルワリー。<br\/>この地にあるからこそ「まちに根付いたものを作りたい」と、<br\/>広島県産の素材も使い、何度でも飲みたくなるビールを目指しています。<br\/>また、醸造設備を眺めながら楽しめる、<br\/>併設のブリューパブ＆居酒屋「Craftbeer と炭火はればれ」もあり、<br\/>『まさにビール工場の中で飲める！楽しめる！』場所です。<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "heading_WG38br",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "title": "FAQ"
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "NEW PRODUCTS",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 5,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 28,
         "padding_bottom": 36
       }
@@ -144,27 +78,26 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "craft-beer"
           }
         },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
+        "collection_U8iTAr": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "glass-set"
+          }
+        },
+        "collection_XTPfML": {
+          "type": "collection",
+          "settings": {
+            "collection": "original-goods"
           }
         }
       },
       "block_order": [
         "collection-0",
-        "product",
-        "collection-1"
+        "collection_U8iTAr",
+        "collection_XTPfML"
       ],
       "settings": {
         "heading": "Multimedia collage",
@@ -177,83 +110,18 @@
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
-      "disabled": true,
+    "section_shop_access_DACQEa": {
+      "type": "section-shopAccess",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "title": "SHOP&ACCESS"
       }
     }
   },
   "order": [
-    "slider_em7pqx",
-    "image_banner",
-    "rich_text",
+    "section_slider_yGi9md",
+    "section_concept_VM8RdA",
     "featured_collection",
     "collage",
-    "video",
-    "multicolumn"
+    "section_shop_access_DACQEa"
   ]
 }
